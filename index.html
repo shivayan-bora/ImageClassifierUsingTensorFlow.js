@@ -8,21 +8,19 @@
     <!-- Loading the latest version of TensorFlow.js-->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <!-- Loading the mobile net model from TensorFlow.js-->
-    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    
+    <!-- <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script> -->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
-    <div id="console"></div>
     <!-- Add an image that we will use to test -->
     <!--img id="img" crossOrigin src="JlUvsxa.jpg" width="227" height="227" /-->
     <!-- For Webcam -->
-    <video
-      autoplay
-      playsinline
-      muted
-      id="webcam"
-      width="224"
-      height="224"
-    ></video>
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>    
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>    
+    <div id="console"></div>
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>
